@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2eb39646ab.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li> 
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-xmark" onclick="showMenu()"></i>            
+        </nav>
+
+    <div class="text-box">
+        <h1>Welcome to our resturant</h1>
+        <p>We are committed to serving delicious meals made from fresh ingredients sourced locally. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida ex vitae efficitur facilisis.</p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+
+    </div>
+    </section>
+
+
+
+
+    <!-- --------timing--------- -->
+    <section class="timing">
+    <!-- <h1>Open From</h1> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.sa ut asperiores, fugiat quod.</p>
+    <div class="row">
+        <div class="timing-col">
+            
+            <h3>Monday-Friday</h3>
+            <p>08:00 — 22:00</p>
+        </div>
+        <div class="timing-col">
+            <h3>Weekend</h3>
+            <p>09:00 — 23.45</p>
+        </div>
+        <div class="timing-col">
+            <h3>Contact Info</h3>
+            <p>Bus Stand, Near Station Road, Opp. Metro Station Sindhi Camp, Jaipur, <br>Rajasthan (302006)</p>
+            <p>+91 69854 50550</p>
+            <p>indo@table.booking</p>
+            
+            <p></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- -----call to action------ -->
+<section class="cta">
+    <h1>Contact Us</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<!-- -----Footer---- -->
+<section class="footer">
+    <h4>Social Media</h4>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>        
+        <i class="fa-brands fa-twitter"></i>      
+        <i class="fa-brands fa-instagram"></i>        
+    </div>
+    <p>Made by Ritika Khandelwal</p>
+</section>
+
+
+
+
+
+
+<!-- ---Javascript for toggle menu--- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+
+</body>
+</html>
+
+

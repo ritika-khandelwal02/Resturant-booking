@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2eb39646ab.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="sub-header4">
+        <nav>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li> 
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-xmark" onclick="showMenu()"></i>            
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+  
+<!-- ---------contact us------- -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.86053520997!2d75.79055784999998!3d26.88521075000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1709741721486!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+            <i class="fa-solid fa-home"></i>
+            <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>Jaipur, Rajasthan, IN</p>
+            </span>
+            </div>
+            <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+                <h5>+91 99524 84200</h5>
+                <!-- <h5>Open Hours :</h5> -->
+                <p>Monday- Saturday: 8:00-23:00</p>
+            </span>
+            </div>
+            <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h5>info@table.booking</h5>
+                <p>Email us for table booking</p>
+            </span>
+            </div>
+        </div>
+         <div class="contact-col"> 
+            <form action="form-handler.php" method="post">
+                <input text="text" name="name" placeholder="Name" required>
+                <input text="email" name="email" placeholder="Email address" required>
+                <textarea rows="8" name="message" 
+                placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn">Submit</button>
+            </form>
+         </div>
+    </div>
+</section>
+
+
+
+<!-- -----Footer---- -->
+<section class="footer">
+    <h4>Social Media</h4>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>        
+        <i class="fa-brands fa-twitter"></i>      
+        <i class="fa-brands fa-instagram"></i>        
+    </div>
+    <p>Made by Ritika Khandelwal</p>
+</section>
+
+
+
+
+
+
+<!-- ---Javascript for toggle menu--- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+
+</body>
+</html>
+
+
